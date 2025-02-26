@@ -14,7 +14,7 @@ pipeline {
                 docker { image 'nginx:latest'}
             }
             steps {
-                sh 'nginx --version'
+                sh 'nginx -v'
             }
         }
     }
