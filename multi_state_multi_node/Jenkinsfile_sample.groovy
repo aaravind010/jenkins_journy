@@ -6,7 +6,7 @@ pipeline {
                 docker { image 'maven:latest'}
             }
             steps {
-                sh 'mvn -iversion'
+                sh 'mvn --version'
             }
         }
         stage ("front-end") {
