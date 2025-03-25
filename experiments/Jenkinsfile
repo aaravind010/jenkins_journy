@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('get code'){
             steps{
-                git branch: 'paac' , url: 'https://github.com/devopshydclub/vprofile-project.git'
+                git branch: 'paas' , url: 'https://github.com/devopshydclub/vprofile-project.git'
             }
         }
         stage('build'){
