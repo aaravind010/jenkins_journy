@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('get code'){
             steps{
-                git branch: 'paas' , url: 'https://github.com/devopshydclub/vprofile-project.git'
+                git branch: 'docker' , url: 'https://github.com/hkhcoder/vprofile-project.git'
             }
         }
         stage('build'){
