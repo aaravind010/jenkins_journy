@@ -2,7 +2,7 @@ pipeline{
     agent any
     stages{
         stage('get code'){
-            stpes{
+            steps{
                 git branch: 'paac' , url: 'https://github.com/devopshydclub/vprofile-project.git'
             }
         }
