@@ -1,0 +1,11 @@
+pipeline {
+    agent any
+
+    stages{
+        stage ('test case'){
+            steps{
+                sh 'echo "i am from Jenkins file"'
+            }
+        }
+    }
+}
