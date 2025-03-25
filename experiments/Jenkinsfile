@@ -1,10 +1,19 @@
-pipeline {
+pipeline{
     agent any
-
     stages{
-        stage ('test case'){
+        stage('get code'){
+            stpes{
+                git branch: 'paac' , url: 'https://github.com/devopshydclub/vprofile-project.git'
+            }
+        }
+        stage('build'){
             steps{
-                sh 'echo "i am from Jenkins file"'
+                sh 'mvn install'
+            }
+        }
+        stage('test'){
+            steps{
+                sh 'mvn test'
             }
         }
     }
